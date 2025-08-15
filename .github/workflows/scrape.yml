@@ -3,58 +3,33 @@ name: Update uniques.json
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 13 * * *"    # 13:00 UTC (~9:00 AM ET)
+    - cron: "0 13 * * *"   # daily at 13:00 UTC (~9 AM ET)
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    concurrency:
-      group: d4-uniques-scrape
-      cancel-in-progress: true
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Show repo tree (sanity check)
-        run: |
-          pwd
-          ls -la
-          echo "---- scripts ----"
-          ls -la scripts || true
-          echo "---- public ----"
-          ls -la public || true
-
-      - name: Setup Node 20
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
-      - name: Install deps (no lockfile needed)
+      - name: Install dependencies
         run: |
           npm init -y
           npm install axios cheerio
-          node -v
-          npm -v
 
-      - name: Preflight: confirm script exists
-        run: |
-          test -f scripts/scrape-uniques.mjs && echo "Found scripts/scrape-uniques.mjs" || (echo "Missing scripts/scrape-uniques.mjs" && exit 1)
+      - name: Ensure output dir
+        run: mkdir -p public
 
-      - name: Network preflight (HEAD request)
-        run: |
-          # Quick HEAD to see if the site is reachable from the runner
-          curl -I --fail -A "D4-Build-Finder/1.0" https://d4builds.gg/database/uniques/
-
-      - name: Run scraper (with stack traces)
-        run: node --trace-warnings scripts/scrape-uniques.mjs
-
-      - name: Show output size
-        run: |
-          du -h public/uniques.json
-          head -n 20 public/uniques.json || true
+      - name: Run scraper
+        run: node scripts/scrape-uniques.mjs
 
       - name: Commit & push if changed
         run: |
@@ -67,9 +42,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
-
-      - name: Upload artifact (optional)
-        uses: actions/upload-artifact@v4
-        with:
-          name: uniques.json
-          path: public/uniques.json
