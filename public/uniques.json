@@ -1,1 +1,1391 @@
-
+{
+  "updatedAt": "2025-08-15T20:18:42.146Z",
+  "items": [
+    {
+      "id": "100-000-steps",
+      "name": "100,000 Steps",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ahavarion-spear-of-lycander",
+      "name": "Ahavarion, Spear of Lycander",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "airidah-s-inexorable-will",
+      "name": "Airidah's Inexorable Will",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ancients-oath",
+      "name": "Ancients' Oath",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "andariel-s-visage",
+      "name": "Andariel's Visage",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "arreat-s-bearing",
+      "name": "Arreat's Bearing",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "asheara-s-khanjar",
+      "name": "Asheara's Khanjar",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "assassin-s-stride",
+      "name": "Assassin's Stride",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "axial-conduit",
+      "name": "Axial Conduit",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "azurewrath",
+      "name": "Azurewrath",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "balazan-s-maxtlatl",
+      "name": "Balazan's Maxtlatl",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "band-of-first-breath",
+      "name": "Band of First Breath",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "bands-of-ichorous-rose",
+      "name": "Bands of Ichorous Rose",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "bane-of-ahjed-den",
+      "name": "Bane of Ahjed-Den",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "banished-lord-s-talisman",
+      "name": "Banished Lord's Talisman",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "battle-trance",
+      "name": "Battle Trance",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": "30% Resistance to All ElementsLucky Hit: Up to a 20% chance to gain a stack of Frenzy",
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "beastfall-boots",
+      "name": "Beastfall Boots",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "black-river",
+      "name": "Black River",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "blood-artisan-s-cuirass",
+      "name": "Blood Artisan's Cuirass",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "blood-moon-breeches",
+      "name": "Blood Moon Breeches",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "bloodless-scream",
+      "name": "Bloodless Scream",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "blue-rose",
+      "name": "Blue Rose",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "condemnation",
+      "name": "Condemnation",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "cowl-of-the-nameless",
+      "name": "Cowl of the Nameless",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "craze-of-the-dead-god",
+      "name": "Craze of the Dead God",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "crown-of-lucion",
+      "name": "Crown of Lucion",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "cruor-s-embrace",
+      "name": "Cruor's Embrace",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "deathless-visage",
+      "name": "Deathless Visage",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "deathmask-of-nirmitruq",
+      "name": "Deathmask of Nirmitruq",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "deathspeaker-s-pendant",
+      "name": "Deathspeaker's Pendant",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "dolmen-stone",
+      "name": "Dolmen Stone",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "doombringer",
+      "name": "Doombringer",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "eaglehorn",
+      "name": "Eaglehorn",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "earthbreaker",
+      "name": "Earthbreaker",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ebonpiercer",
+      "name": "Ebonpiercer",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "endurant-faith",
+      "name": "Endurant Faith",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "esadora-s-overflowing-cameo",
+      "name": "Esadora's Overflowing Cameo",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "esu-s-heirloom",
+      "name": "Esu's Heirloom",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "eyes-in-the-dark",
+      "name": "Eyes in the Dark",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "fields-of-crimson",
+      "name": "Fields of Crimson",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "fists-of-fate",
+      "name": "Fists of Fate",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "flamescar",
+      "name": "Flamescar",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": "23 Life On HitLucky Hit: Up to a 40% Chance to Deal 6000 Fire Damage",
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "flameweaver",
+      "name": "Flameweaver",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "fleshrender",
+      "name": "Fleshrender",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "flickerstep",
+      "name": "Flickerstep",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "fractured-winterglass",
+      "name": "Fractured Winterglass",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": "Conjuration Cooldowns are Reduced by 0.3 Seconds when a Frozen Orb Explodes",
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "frostburn",
+      "name": "Frostburn",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "gathlen-s-birthright",
+      "name": "Gathlen's Birthright",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "gloves-of-the-illuminator",
+      "name": "Gloves of the Illuminator",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "godslayer-crown",
+      "name": "Godslayer Crown",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "gohr-s-devastating-grips",
+      "name": "Gohr's Devastating Grips",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "grasp-of-shadow",
+      "name": "Grasp of Shadow",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "greatstaff-of-the-crone",
+      "name": "Greatstaff of the Crone",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "greaves-of-the-empty-tomb",
+      "name": "Greaves of the Empty Tomb",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "hail-of-verglas",
+      "name": "Hail of Verglas",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "harlequin-crest",
+      "name": "Harlequin Crest",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "harmony-of-ebewaka",
+      "name": "Harmony of Ebewaka",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "hellhammer",
+      "name": "Hellhammer",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "heir-of-perdition",
+      "name": "Heir of Perdition",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "hooves-of-the-mountain-god",
+      "name": "Hooves of the Mountain God",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "howl-from-below",
+      "name": "Howl from Below",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "hunter-s-zenith",
+      "name": "Hunter's Zenith",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "iceheart-brais",
+      "name": "Iceheart Brais",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "indira-s-memory",
+      "name": "Indira's Memory",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "insatiable-fury",
+      "name": "Insatiable Fury",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "jacinth-shell",
+      "name": "Jacinth Shell",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "kessime-s-legacy",
+      "name": "Kessime's Legacy",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "lidless-wall",
+      "name": "Lidless Wall",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "locran-s-talisman",
+      "name": "Locran's Talisman",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "loyalty-s-mantle",
+      "name": "Loyalty's Mantle",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mad-wolf-s-glee",
+      "name": "Mad Wolf's Glee",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "malefic-crescent",
+      "name": "Malefic Crescent",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mantle-of-mountain-s-fury",
+      "name": "Mantle of Mountain's Fury",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "melted-heart-of-selig",
+      "name": "Melted Heart of Selig",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mj-lnic-ryng",
+      "name": "Mjölnic Ryng",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mother-s-embrace",
+      "name": "Mother's Embrace",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mutilator-plate",
+      "name": "Mutilator Plate",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "nesekem-the-herald",
+      "name": "Nesekem, The Herald",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "rotting-lightbringer",
+      "name": "Rotting Lightbringer",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "okun-s-catalyst",
+      "name": "Okun's Catalyst",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": "Ball Lightning Can Be Cast While Moving",
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ophidian-iris",
+      "name": "Ophidian Iris",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "overkill",
+      "name": "Overkill",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "paingorger-s-gauntlets",
+      "name": "Paingorger's Gauntlets",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "path-of-trag-oul",
+      "name": "Path of Trag'Oul",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "peacemonger-s-signet",
+      "name": "Peacemonger's Signet",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "penitent-greaves",
+      "name": "Penitent Greaves",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "pitfighter-s-gull",
+      "name": "Pitfighter's Gull",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "protection-of-the-prime",
+      "name": "Protection of the Prime",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "rage-of-harrogath",
+      "name": "Rage of Harrogath",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "raiment-of-the-infinite",
+      "name": "Raiment of the Infinite",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "rakanoth-s-wake",
+      "name": "Rakanoth's Wake",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ramaladni-s-magnum-opus",
+      "name": "Ramaladni's Magnum Opus",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "razorplate",
+      "name": "Razorplate",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-the-midday-hunt",
+      "name": "Ring of the Midday Hunt",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-the-midnight-sun",
+      "name": "Ring of the Midnight Sun",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wound-drinker",
+      "name": "Wound Drinker",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-mendeln",
+      "name": "Ring of Mendeln",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-red-furor",
+      "name": "Ring of Red Furor",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-starless-skies",
+      "name": "Ring of Starless Skies",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-the-ravenous",
+      "name": "Ring of the Ravenous",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-the-sacrilegious-soul",
+      "name": "Ring of the Sacrilegious Soul",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "rod-of-kepeleke",
+      "name": "Rod of Kepeleke",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-writhing-moon",
+      "name": "Ring of Writhing Moon",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "saboteur-s-signet",
+      "name": "Saboteur's Signet",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sanguivor-blade-of-zir",
+      "name": "Sanguivor, Blade of Zir",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "scoundrel-s-kiss",
+      "name": "Scoundrel's Kiss",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "scoundrel-s-leathers",
+      "name": "Scoundrel's Leathers",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sepazontec",
+      "name": "Sepazontec",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "shard-of-verathiel",
+      "name": "Shard of Verathiel",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "shattered-vow",
+      "name": "Shattered Vow",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "shroud-of-false-death",
+      "name": "Shroud of False Death",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "shroud-of-khanduras",
+      "name": "Shroud of Khanduras",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sidhe-bindings",
+      "name": "Sidhe Bindings",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "skyhunter",
+      "name": "Skyhunter",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "scorn-of-the-earth",
+      "name": "Scorn of the Earth",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "soulbrand",
+      "name": "Soulbrand",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "staff-of-endless-rage",
+      "name": "Staff of Endless Rage",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "staff-of-lam-esen",
+      "name": "Staff of Lam Esen",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "starfall-coronet",
+      "name": "Starfall Coronet",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "stone-of-vehemen",
+      "name": "Stone of Vehemen",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "storm-s-companion",
+      "name": "Storm's Companion",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "strike-of-stormhorn",
+      "name": "Strike of Stormhorn",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sunbird-s-gorget",
+      "name": "Sunbird's Gorget",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sunstained-war-crozier",
+      "name": "Sunstained War-Crozier",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tal-rasha-s-iridescent-loop",
+      "name": "Tal Rasha's Iridescent Loop",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tassets-of-the-dawning-sky",
+      "name": "Tassets of the Dawning Sky",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "temerity",
+      "name": "Temerity",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tempest-roar",
+      "name": "Tempest Roar",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-basilisk",
+      "name": "The Basilisk",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-butcher-s-cleaver",
+      "name": "The Butcher's Cleaver",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-grandfather",
+      "name": "The Grandfather",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-hand-of-naz",
+      "name": "The Hand of Naz",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-mortacrux",
+      "name": "The Mortacrux",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-oculus",
+      "name": "The Oculus",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-third-blade",
+      "name": "The Third Blade",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-umbracrux",
+      "name": "The Umbracrux",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "the-unmaker",
+      "name": "The Unmaker",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tibault-s-will",
+      "name": "Tibault's Will",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tuskhelm-of-joritz-the-mighty",
+      "name": "Tuskhelm of Joritz the Mighty",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "twin-strikes",
+      "name": "Twin Strikes",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "tyrael-s-might",
+      "name": "Tyrael's Might",
+      "rarity": "uber",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ugly-bastard-helm",
+      "name": "Ugly Bastard Helm",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "unbroken-chain",
+      "name": "Unbroken Chain",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "unsung-ascetic-s-wraps",
+      "name": "Unsung Ascetic's Wraps",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "vasily-s-prayer",
+      "name": "Vasily's Prayer",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "vox-omnium",
+      "name": "Vox Omnium",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "waxing-gibbous",
+      "name": "Waxing Gibbous",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wildheart-hunger",
+      "name": "Wildheart Hunger",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "windforce",
+      "name": "Windforce",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "word-of-hakan",
+      "name": "Word of Hakan",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "writhing-band-of-trickery",
+      "name": "Writhing Band of Trickery",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wushe-nak-pa",
+      "name": "Wushe Nak Pa",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "x-fal-s-corroded-signet",
+      "name": "X'Fal's Corroded Signet",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "yen-s-blessing",
+      "name": "Yen's Blessing",
+      "rarity": "unique",
+      "slot": null,
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    }
+  ]
+}
