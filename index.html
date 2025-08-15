@@ -363,7 +363,8 @@
           let cancelled = false;
           (async () => {
             try {
-              const res = await fetch("./uniques.json", { cache: "no-store" });
+              const res = await fetch("./public/uniques.json", { cache: "no-store" })
+
               if (!res.ok) throw new Error(`HTTP ${res.status}`);
               const json = await res.json();
               if (!cancelled) setItems(Array.isArray(json.items) ? json.items : []);
@@ -640,3 +641,4 @@
     </script>
   </body>
 </html>
+
