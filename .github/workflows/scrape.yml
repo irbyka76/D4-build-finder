@@ -3,7 +3,7 @@ name: Update uniques.json
 on:
   workflow_dispatch:        # allow manual "Run workflow" from the Actions tab
   schedule:
-    - cron: "0 13 * * *"    # every day at 13:00 UTC (~9:00 AM ET; shifts with DST)
+    - cron: "0 13 * * *"    # every day at 13:00 UTC (~9:00 AM ET)
 
 jobs:
   scrape:
@@ -22,17 +22,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
 
-      # Install deps (works whether you ran npm init locally or not)
+      # Install deps without requiring a lockfile
       - name: Install dependencies
         run: |
-          npm pkg set type=module >/dev/null 2>&1 || true
-          npm pkg set scripts.scrape:uniques="node scripts/scrape-uniques.mjs" >/dev/null 2>&1 || true
-          npm i axios cheerio
+          npm init -y
+          npm install axios cheerio
 
       - name: Run scraper
-        run: npm run scrape:uniques
+        run: node scripts/scrape-uniques.mjs
 
       - name: Commit & push if changed
         run: |
