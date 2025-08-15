@@ -1,0 +1,54 @@
+name: Update uniques.json
+
+on:
+  workflow_dispatch:        # allow manual "Run workflow" from the Actions tab
+  schedule:
+    - cron: "0 13 * * *"    # every day at 13:00 UTC (~9:00 AM ET; shifts with DST)
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # allow committing back to the repo
+    concurrency:
+      group: d4-uniques-scrape
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # Install deps (works whether you ran npm init locally or not)
+      - name: Install dependencies
+        run: |
+          npm pkg set type=module >/dev/null 2>&1 || true
+          npm pkg set scripts.scrape:uniques="node scripts/scrape-uniques.mjs" >/dev/null 2>&1 || true
+          npm i axios cheerio
+
+      - name: Run scraper
+        run: npm run scrape:uniques
+
+      - name: Commit & push if changed
+        run: |
+          if [[ -n "$(git status --porcelain public/uniques.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/uniques.json
+            git commit -m "chore: refresh uniques.json [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      # Optional: keep a copy of the generated file in the workflow run
+      - name: Upload artifact (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: uniques.json
+          path: public/uniques.json
