@@ -1,0 +1,448 @@
+import React, { useMemo, useState, useEffect } from "react";
+
+/**
+ * D4 Meta Build Finder — single-file MVP
+ * -------------------------------------------------------
+ * What it does
+ *  - Pick a class + the Unique / Uber Unique items you have
+ *  - See meta builds that use those items, ranked by match score
+ *  - Mobile-first UI, fast client-side search
+ *
+ * How to extend
+ *  - Add/adjust data in DATA.items and DATA.builds below
+ *  - Wire real data by swapping DATA for a fetched JSON endpoint
+ *  - Import from a scraper by producing the same shape
+ *
+ * URL sharing
+ *  - Keeps selections in the URL (?cls=barb&items=shako,grandfather)
+ *
+ * Styling
+ *  - Tailwind only (pre-wired by canvas). No external CSS needed.
+ */
+
+// ---------- Types ----------
+const CLASSES = [
+  { id: "barb", name: "Barbarian" },
+  { id: "sorc", name: "Sorcerer" },
+  { id: "rogue", name: "Rogue" },
+  { id: "necro", name: "Necromancer" },
+  { id: "druid", name: "Druid" },
+];
+
+/** Item rarity categories used on the site */
+const RARITIES = [
+  { id: "unique", name: "Unique" },
+  { id: "uber", name: "Uber Unique" }, // AKA Mythic Unique in early vernacular
+];
+
+// ---------- Sample Data (swap with real scraped/curated JSON) ----------
+const DATA = {
+  items: [
+    // Ubers
+    { id: "shako", name: "Harlequin Crest (Shako)", rarity: "uber", slot: "Helm" },
+    { id: "grandfather", name: "The Grandfather", rarity: "uber", slot: "Two-Handed Sword" },
+    { id: "melted-heart", name: "Melted Heart of Selig", rarity: "uber", slot: "Amulet" },
+    { id: "andariels", name: "Andariel's Visage", rarity: "uber", slot: "Helm" },
+    { id: "ring-starless", name: "Ring of Starless Skies", rarity: "uber", slot: "Ring" },
+
+    // Class-leaning Uniques (examples — add many more)
+    { id: "raiment", name: "Raiment of the Infinite", rarity: "unique", slot: "Chest", classHints: ["sorc"] },
+    { id: "windforce", name: "Windforce", rarity: "unique", slot: "Bow", classHints: ["rogue"] },
+    { id: "doombringer", name: "Doombringer", rarity: "unique", slot: "Sword", classHints: ["barb", "rogue"] },
+    { id: "tempest-roar", name: "Tempest Roar", rarity: "unique", slot: "Helm", classHints: ["druid"] },
+    { id: "black-river", name: "Black River", rarity: "unique", slot: "Scythe", classHints: ["necro"] },
+    { id: "mothers-embrace", name: "Mother's Embrace", rarity: "unique", slot: "Ring" },
+    { id: "asheara-kur", name: "Asheara's Khanjar", rarity: "unique", slot: "Dagger", classHints: ["rogue"] },
+  ],
+  builds: [
+    // Barbarian
+    {
+      id: "barb-ww-shako-gf",
+      class: "barb",
+      name: "Whirlwind Shako + Grandfather",
+      requiredItems: ["shako", "grandfather"],
+      optionalItems: ["doombringer"],
+      notes: "High-end WW variant leveraging CDR from Shako and raw DPS from GF.",
+      sources: [
+        { label: "Guide", url: "https://example.com/builds/barb-ww" },
+      ],
+    },
+    {
+      id: "barb-hota-gf",
+      class: "barb",
+      name: "HOTA Grandfather Core",
+      requiredItems: ["grandfather"],
+      optionalItems: ["shako"],
+      notes: "Hammer of the Ancients variant with GF crit scaling.",
+      sources: [],
+    },
+
+    // Sorcerer
+    {
+      id: "sorc-ball-raiment-shako",
+      class: "sorc",
+      name: "Ball Lightning Raiment + Shako",
+      requiredItems: ["raiment"],
+      optionalItems: ["shako", "melted-heart"],
+      notes: "Teleport pull from Raiment; Shako for DR/CDR; Selig for resource sustain.",
+      sources: [],
+    },
+
+    // Rogue
+    {
+      id: "rogue-pen-windforce",
+      class: "rogue",
+      name: "Penetrating Shot Windforce",
+      requiredItems: ["windforce"],
+      optionalItems: ["doombringer", "ring-starless"],
+      notes: "Push build with knockback proc and high single-target.",
+      sources: [],
+    },
+
+    // Druid
+    {
+      id: "druid-storm-tempest",
+      class: "druid",
+      name: "Stormclaw Tempest Roar",
+      requiredItems: ["tempest-roar"],
+      optionalItems: ["andariels", "melted-heart"],
+      notes: "Werewolf casting via Tempest Roar; Andariel's for attack speed.",
+      sources: [],
+    },
+
+    // Necromancer
+    {
+      id: "necro-corpse-blackriver",
+      class: "necro",
+      name: "Corpse Explosion Black River",
+      requiredItems: ["black-river"],
+      optionalItems: ["mothers-embrace", "shako"],
+      notes: "Massive Corpse Explosion radius and damage stacking.",
+      sources: [],
+    },
+  ],
+};
+
+// ---------- Helpers ----------
+const byId = (arr) => Object.fromEntries(arr.map((x) => [x.id, x]));
+const ITEM_INDEX = byId(DATA.items);
+
+function useQueryState() {
+  const [params, setParams] = useState(() => new URLSearchParams(window.location.search));
+  useEffect(() => {
+    const onPop = () => setParams(new URLSearchParams(window.location.search));
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+  const set = (updates) => {
+    const next = new URLSearchParams(params.toString());
+    Object.entries(updates).forEach(([k, v]) => {
+      if (v == null || v === "") next.delete(k);
+      else next.set(k, v);
+    });
+    const url = `${window.location.pathname}?${next.toString()}`;
+    window.history.replaceState({}, "", url);
+    setParams(next);
+  };
+  return [params, set];
+}
+
+function Badge({ children }) {
+  return (
+    <span className="inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium">
+      {children}
+    </span>
+  );
+}
+
+function Section({ title, children, actions }) {
+  return (
+    <section className="bg-white/5 backdrop-blur rounded-2xl p-4 md:p-6 shadow-sm border border-white/10">
+      <div className="flex items-center justify-between gap-3 mb-3">
+        <h2 className="text-lg md:text-xl font-semibold">{title}</h2>
+        {actions}
+      </div>
+      {children}
+    </section>
+  );
+}
+
+// ---------- App ----------
+export default function App() {
+  const [query, setQuery] = useState("");
+  const [activeClass, setActiveClass] = useState(() => new URLSearchParams(window.location.search).get("cls") || "");
+  const [selectedItems, setSelectedItems] = useState(() => {
+    const raw = new URLSearchParams(window.location.search).get("items");
+    return new Set((raw ? raw.split(",") : []).filter((id) => ITEM_INDEX[id]));
+  });
+  const [params, setParams] = useQueryState();
+
+  // Sync URL when state changes
+  useEffect(() => {
+    setParams({
+      cls: activeClass || null,
+      items: [...selectedItems].join(",") || null,
+    });
+  }, [activeClass, selectedItems]);
+
+  const itemsFiltered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return DATA.items.filter((it) => {
+      const textMatch = !q || `${it.name} ${it.slot}`.toLowerCase().includes(q);
+      const classMatch = !activeClass || !it.classHints || it.classHints.includes(activeClass);
+      return textMatch && classMatch;
+    });
+  }, [query, activeClass]);
+
+  const buildsForClass = useMemo(() => {
+    const pool = activeClass ? DATA.builds.filter((b) => b.class === activeClass) : DATA.builds;
+    // Score builds by how many selected items they use (required > optional)
+    return pool
+      .map((b) => {
+        const have = selectedItems;
+        const requiredHits = b.requiredItems.filter((id) => have.has(id));
+        const optionalHits = b.optionalItems?.filter((id) => have.has(id)) || [];
+        const missingRequired = b.requiredItems.filter((id) => !have.has(id));
+        const score = requiredHits.length * 2 + optionalHits.length * 1; // weight required higher
+        const complete = missingRequired.length === 0 && requiredHits.length > 0;
+        return { ...b, score, requiredHits, optionalHits, missingRequired, complete };
+      })
+      .sort((a, b) => b.score - a.score);
+  }, [activeClass, selectedItems]);
+
+  const toggleItem = (id) => {
+    setSelectedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const clearAll = () => setSelectedItems(new Set());
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100 p-3 md:p-6">
+      <header className="max-w-6xl mx-auto mb-4 md:mb-8">
+        <div className="flex items-center justify-between gap-2">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">D4 Meta Build Finder</h1>
+          <a
+            href="https://diablo4.life/tools/gambling"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs md:text-sm opacity-70 hover:opacity-100 underline"
+          >
+            UI inspiration
+          </a>
+        </div>
+        <p className="text-sm md:text-base opacity-80 mt-1">Pick your class and the Uniques you own to see builds that fit.</p>
+      </header>
+
+      <main className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6">
+        {/* LEFT: Filters */}
+        <div className="lg:col-span-2 space-y-4 md:space-y-6">
+          <Section
+            title="Class"
+            actions={
+              activeClass && (
+                <button
+                  onClick={() => setActiveClass("")}
+                  className="text-xs underline opacity-80 hover:opacity-100"
+                >
+                  Clear
+                </button>
+              )
+            }
+          >
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {CLASSES.map((c) => (
+                <button
+                  key={c.id}
+                  onClick={() => setActiveClass((prev) => (prev === c.id ? "" : c.id))}
+                  className={
+                    "rounded-2xl border px-3 py-2 text-sm text-left shadow-sm transition " +
+                    (activeClass === c.id
+                      ? "border-emerald-400/60 bg-emerald-400/10"
+                      : "border-white/10 hover:bg-white/5")
+                  }
+                >
+                  <div className="font-medium">{c.name}</div>
+                  <div className="text-[11px] opacity-70">{DATA.builds.filter((b) => b.class === c.id).length} builds</div>
+                </button>
+              ))}
+            </div>
+          </Section>
+
+          <Section
+            title="Your Uniques"
+            actions={
+              selectedItems.size > 0 && (
+                <button onClick={clearAll} className="text-xs underline opacity-80 hover:opacity-100">
+                  Clear all
+                </button>
+              )
+            }
+          >
+            <div className="relative mb-3">
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search by name or slot…"
+                className="w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm outline-none focus:border-white/20"
+              />
+            </div>
+
+            {/* Chips for selected */}
+            {selectedItems.size > 0 && (
+              <div className="flex flex-wrap gap-2 mb-3">
+                {[...selectedItems].map((id) => (
+                  <button
+                    key={id}
+                    onClick={() => toggleItem(id)}
+                    className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 px-3 py-1 text-xs border border-emerald-400/40"
+                  >
+                    {ITEM_INDEX[id]?.name || id}
+                    <span className="text-emerald-300">×</span>
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Items list */}
+            <div className="max-h-[24rem] overflow-auto pr-1 space-y-2">
+              {itemsFiltered.map((it) => (
+                <label
+                  key={it.id}
+                  className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm hover:bg-white/10"
+                >
+                  <div className="min-w-0">
+                    <div className="font-medium truncate">{it.name}</div>
+                    <div className="text-[11px] opacity-70 truncate">{it.slot}</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Badge>{it.rarity === "uber" ? "Uber" : "Unique"}</Badge>
+                    <input
+                      type="checkbox"
+                      className="size-4 accent-emerald-400"
+                      checked={selectedItems.has(it.id)}
+                      onChange={() => toggleItem(it.id)}
+                    />
+                  </div>
+                </label>
+              ))}
+              {itemsFiltered.length === 0 && (
+                <div className="text-xs opacity-70">No items found. Try a different search.</div>
+              )}
+            </div>
+          </Section>
+        </div>
+
+        {/* RIGHT: Results */}
+        <div className="lg:col-span-3 space-y-4 md:space-y-6">
+          <Section title="Matching Builds" actions={<ResultsLegend />}> 
+            <ResultsList builds={buildsForClass} />
+          </Section>
+        </div>
+      </main>
+
+      <footer className="max-w-6xl mx-auto mt-6 md:mt-10 text-xs opacity-70">
+        <p>
+          Tip: Share your selections with friends — the URL updates as you pick items. 
+          Add more builds/items by swapping the in-file DATA object for a hosted JSON.
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+function ResultsLegend() {
+  return (
+    <div className="hidden md:flex items-center gap-2 text-xs opacity-80">
+      <Badge>Score</Badge>
+      <span>Required items count ×2 + optional items count</span>
+    </div>
+  );
+}
+
+function ResultsList({ builds }) {
+  if (!builds || builds.length === 0) {
+    return <div className="text-sm opacity-80">No builds yet. Pick a class and items to get started.</div>;
+  }
+  return (
+    <div className="grid grid-cols-1 gap-3">
+      {builds.map((b) => (
+        <article key={b.id} className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <h3 className="text-base md:text-lg font-semibold flex items-center gap-2">
+                {b.name}
+                {b.complete && <Badge>All required found</Badge>}
+              </h3>
+              <div className="text-[12px] opacity-70">{classNameFromId(b.class)}</div>
+            </div>
+            <div className="text-right">
+              <div className="text-xl font-bold leading-none">{b.score}</div>
+              <div className="text-[11px] opacity-70">match</div>
+            </div>
+          </div>
+
+          <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <div className="text-xs opacity-80 mb-1">Required</div>
+              <div className="flex flex-wrap gap-2">
+                {b.requiredItems.map((id) => (
+                  <span
+                    key={id}
+                    className={
+                      "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[11px] border " +
+                      (b.requiredHits.includes(id)
+                        ? "bg-emerald-500/15 border-emerald-400/40"
+                        : "bg-white/5 border-white/15")
+                    }
+                  >
+                    {ITEM_INDEX[id]?.name || id}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="text-xs opacity-80 mb-1">Optional</div>
+              <div className="flex flex-wrap gap-2">
+                {(b.optionalItems || []).map((id) => (
+                  <span
+                    key={id}
+                    className={
+                      "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[11px] border " +
+                      (b.optionalHits.includes(id)
+                        ? "bg-emerald-500/15 border-emerald-400/40"
+                        : "bg-white/5 border-white/15")
+                    }
+                  >
+                    {ITEM_INDEX[id]?.name || id}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {b.notes && <p className="text-sm opacity-90 mt-3">{b.notes}</p>}
+
+          {b.sources?.length > 0 && (
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+              {b.sources.map((s, i) => (
+                <a key={i} href={s.url} target="_blank" rel="noreferrer" className="underline opacity-90 hover:opacity-100">
+                  {s.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function classNameFromId(id) {
+  return CLASSES.find((c) => c.id === id)?.name || id;
+}
