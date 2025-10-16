@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-10-15T13:28:42.406Z",
+  "updatedAt": "2025-10-16T13:27:39.343Z",
   "items": [
     {
       "id": "100-000-steps",
@@ -119,8 +119,8 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
-      "id": "bane-of-ahjed-den",
-      "name": "Bane of Ahjed-Den",
+      "id": "bane-of-ahjad-den",
+      "name": "Bane of Ahjad-Den",
       "rarity": "unique",
       "slot": "Gloves",
       "class": null,
@@ -425,6 +425,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "galvanic-azurite",
+      "name": "Galvanic Azurite",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "gathlen-s-birthright",
       "name": "Gathlen's Birthright",
       "rarity": "unique",
@@ -456,6 +465,15 @@
       "name": "Gohr's Devastating Grips",
       "rarity": "unique",
       "slot": "Gloves",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "gospel-of-the-devotee",
+      "name": "Gospel of the Devotee",
+      "rarity": "unique",
+      "slot": "Focus",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -515,6 +533,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "heir-of-perdition",
+      "name": "Heir of Perdition",
+      "rarity": "uber",
+      "slot": "Helm",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "hellhammer",
       "name": "Hellhammer",
       "rarity": "unique",
@@ -524,10 +551,10 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
-      "id": "heir-of-perdition",
-      "name": "Heir of Perdition",
-      "rarity": "uber",
-      "slot": "Helm",
+      "id": "hesha-e-kesungi",
+      "name": "Hesha e Kesungi",
+      "rarity": "unique",
+      "slot": "Gloves",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -598,6 +625,15 @@
     {
       "id": "kessime-s-legacy",
       "name": "Kessime's Legacy",
+      "rarity": "unique",
+      "slot": "Pants",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "kilt-of-blackwing",
+      "name": "Kilt of Blackwing",
       "rarity": "unique",
       "slot": "Pants",
       "class": null,
@@ -704,15 +740,6 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
-      "id": "rotting-lightbringer",
-      "name": "Rotting Lightbringer",
-      "rarity": "unique",
-      "slot": "2h Mace",
-      "class": null,
-      "effect": null,
-      "source": "https://d4builds.gg/database/uniques/"
-    },
-    {
       "id": "okun-s-catalyst",
       "name": "Okun's Catalyst",
       "rarity": "unique",
@@ -726,6 +753,15 @@
       "name": "Ophidian Iris",
       "rarity": "unique",
       "slot": "Amulet",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "orphan-maker",
+      "name": "Orphan Maker",
+      "rarity": "unique",
+      "slot": "Crossbow",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -839,33 +875,6 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
-      "id": "ring-of-the-midday-hunt",
-      "name": "Ring of the Midday Hunt",
-      "rarity": "unique",
-      "slot": "Ring",
-      "class": null,
-      "effect": null,
-      "source": "https://d4builds.gg/database/uniques/"
-    },
-    {
-      "id": "ring-of-the-midnight-sun",
-      "name": "Ring of the Midnight Sun",
-      "rarity": "unique",
-      "slot": "Ring",
-      "class": null,
-      "effect": null,
-      "source": "https://d4builds.gg/database/uniques/"
-    },
-    {
-      "id": "wound-drinker",
-      "name": "Wound Drinker",
-      "rarity": "unique",
-      "slot": "Ring",
-      "class": null,
-      "effect": null,
-      "source": "https://d4builds.gg/database/uniques/"
-    },
-    {
       "id": "ring-of-mendeln",
       "name": "Ring of Mendeln",
       "rarity": "unique",
@@ -893,6 +902,24 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "ring-of-the-midday-hunt",
+      "name": "Ring of the Midday Hunt",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ring-of-the-midnight-sun",
+      "name": "Ring of the Midnight Sun",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "ring-of-the-ravenous",
       "name": "Ring of the Ravenous",
       "rarity": "unique",
@@ -911,6 +938,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "ring-of-writhing-moon",
+      "name": "Ring of Writhing Moon",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "rod-of-kepeleke",
       "name": "Rod of Kepeleke",
       "rarity": "unique",
@@ -920,10 +956,10 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
-      "id": "ring-of-writhing-moon",
-      "name": "Ring of Writhing Moon",
+      "id": "rotting-lightbringer",
+      "name": "Rotting Lightbringer",
       "rarity": "unique",
-      "slot": "Ring",
+      "slot": "2h Mace",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -938,10 +974,28 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "sabre-of-tsasgal",
+      "name": "Sabre of Tsasgal",
+      "rarity": "unique",
+      "slot": "1h Sword",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "sanguivor-blade-of-zir",
       "name": "Sanguivor, Blade of Zir",
       "rarity": "unique",
       "slot": "2h Sword",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "scorn-of-the-earth",
+      "name": "Scorn of the Earth",
+      "rarity": "unique",
+      "slot": "Boots",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -1023,15 +1077,6 @@
       "name": "Skyhunter",
       "rarity": "unique",
       "slot": "Bow",
-      "class": null,
-      "effect": null,
-      "source": "https://d4builds.gg/database/uniques/"
-    },
-    {
-      "id": "scorn-of-the-earth",
-      "name": "Scorn of the Earth",
-      "rarity": "unique",
-      "slot": "Boots",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -1347,6 +1392,15 @@
       "name": "Word of Hakan",
       "rarity": "unique",
       "slot": "Amulet",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wound-drinker",
+      "name": "Wound Drinker",
+      "rarity": "unique",
+      "slot": "Ring",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
