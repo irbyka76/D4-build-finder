@@ -1,6 +1,204 @@
 {
-  "updatedAt": "2025-12-11T13:35:44.251Z",
+  "updatedAt": "2025-12-12T13:31:55.417Z",
   "items": [
+    {
+      "id": "arcadia",
+      "name": "Arcadia",
+      "rarity": "unique",
+      "slot": "Pants",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "argent-veil",
+      "name": "Argent Veil",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "bastion-of-sir-matthias",
+      "name": "Bastion of Sir Matthias",
+      "rarity": "unique",
+      "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "cathedral-s-song",
+      "name": "Cathedral's Song",
+      "rarity": "unique",
+      "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "dawnfire",
+      "name": "Dawnfire",
+      "rarity": "unique",
+      "slot": "Gloves",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "gate-of-the-red-dawn",
+      "name": "Gate of the Red Dawn",
+      "rarity": "unique",
+      "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "griswold-s-opus",
+      "name": "Griswold's Opus",
+      "rarity": "unique",
+      "slot": "1h Sword",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "herald-of-zakarum",
+      "name": "Herald of Zakarum",
+      "rarity": "unique",
+      "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "herald-s-morningstar",
+      "name": "Herald's Morningstar",
+      "rarity": "unique",
+      "slot": "1h Mace",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "judgment-of-auriel",
+      "name": "Judgment of Auriel",
+      "rarity": "unique",
+      "slot": "Amulet",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "judicant-s-glaivehelm",
+      "name": "Judicant's Glaivehelm",
+      "rarity": "unique",
+      "slot": "Helm",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "light-s-rebuke",
+      "name": "Light's Rebuke",
+      "rarity": "unique",
+      "slot": "Flail",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "mantle-of-the-grey",
+      "name": "Mantle of the Grey",
+      "rarity": "unique",
+      "slot": "Chest Armor",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "march-of-the-stalwart-soul",
+      "name": "March of the Stalwart Soul",
+      "rarity": "unique",
+      "slot": "Boots",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "red-sermon",
+      "name": "Red Sermon",
+      "rarity": "unique",
+      "slot": "1h Sword",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sanctis-of-kethamar",
+      "name": "Sanctis of Kethamar",
+      "rarity": "unique",
+      "slot": "Amulet",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "seal-of-the-second-trumpet",
+      "name": "Seal of the Second Trumpet",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sunbrand",
+      "name": "Sunbrand",
+      "rarity": "unique",
+      "slot": "Flail",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "sundered-night",
+      "name": "Sundered Night",
+      "rarity": "unique",
+      "slot": "2h Axe",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "supplication",
+      "name": "Supplication",
+      "rarity": "unique",
+      "slot": "1h Sword",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "ward-of-the-white-dove",
+      "name": "Ward of the White Dove",
+      "rarity": "unique",
+      "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wreath-of-auric-laurel",
+      "name": "Wreath of Auric Laurel",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
     {
       "id": "100-000-steps",
       "name": "100,000 Steps",
@@ -200,6 +398,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "chainscourged-mail",
+      "name": "Chainscourged Mail",
+      "rarity": "unique",
+      "slot": "Pants",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "condemnation",
       "name": "Condemnation",
       "rarity": "unique",
@@ -260,6 +467,15 @@
       "slot": "Helm",
       "class": null,
       "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "death-s-pavane",
+      "name": "Death's Pavane",
+      "rarity": "unique",
+      "slot": "Pants",
+      "class": null,
+      "effect": "+15% Dodge Chance while Channeling Dance of Knives",
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
@@ -488,6 +704,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "gravebloom",
+      "name": "Gravebloom",
+      "rarity": "unique",
+      "slot": "1h Mace",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "greatstaff-of-the-crone",
       "name": "Greatstaff of the Crone",
       "rarity": "unique",
@@ -641,6 +866,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "khamsin-steppewalkers",
+      "name": "Khamsin Steppewalkers",
+      "rarity": "unique",
+      "slot": "Boots",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "lidless-wall",
       "name": "Lidless Wall",
       "rarity": "unique",
@@ -767,6 +1001,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "orsivane",
+      "name": "Orsivane",
+      "rarity": "unique",
+      "slot": "1h Mace",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "overkill",
       "name": "Overkill",
       "rarity": "unique",
@@ -780,6 +1023,15 @@
       "name": "Paingorger's Gauntlets",
       "rarity": "unique",
       "slot": "Gloves",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "path-of-the-emissary",
+      "name": "Path of the Emissary",
+      "rarity": "unique",
+      "slot": "Boots",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
