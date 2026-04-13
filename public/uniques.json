@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12T13:57:40.285Z",
+  "updatedAt": "2026-04-13T14:43:58.630Z",
   "items": [
     {
       "id": "arcadia",
@@ -24,6 +24,15 @@
       "name": "Bastion of Sir Matthias",
       "rarity": "unique",
       "slot": "Shield",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "blood-mad-idol",
+      "name": "Blood-Mad Idol",
+      "rarity": "unique",
+      "slot": "Amulet",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
@@ -1217,6 +1226,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "rustbitten-dirk",
+      "name": "Rustbitten Dirk",
+      "rarity": "unique",
+      "slot": "1h Dagger",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "saboteur-s-signet",
       "name": "Saboteur's Signet",
       "rarity": "unique",
@@ -1532,6 +1550,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "thousand-eye-reaver",
+      "name": "Thousand-Eye Reaver",
+      "rarity": "unique",
+      "slot": "1h Axe",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "tibault-s-will",
       "name": "Tibault's Will",
       "rarity": "unique",
@@ -1622,6 +1649,15 @@
       "source": "https://d4builds.gg/database/uniques/"
     },
     {
+      "id": "wendigo-brand",
+      "name": "Wendigo Brand",
+      "rarity": "unique",
+      "slot": "Ring",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
       "id": "wildheart-hunger",
       "name": "Wildheart Hunger",
       "rarity": "unique",
@@ -1671,6 +1707,15 @@
       "name": "Wushe Nak Pa",
       "rarity": "unique",
       "slot": "Glaive",
+      "class": null,
+      "effect": null,
+      "source": "https://d4builds.gg/database/uniques/"
+    },
+    {
+      "id": "wyrdskin",
+      "name": "Wyrdskin",
+      "rarity": "unique",
+      "slot": "Gloves",
       "class": null,
       "effect": null,
       "source": "https://d4builds.gg/database/uniques/"
